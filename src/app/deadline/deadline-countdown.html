@@ -1,0 +1,5 @@
+@if (secondsLeft() !== null) {
+  <p class="deadline">Seconds left to deadline: {{ secondsLeft() }}</p>
+} @else if (error(); as message) {
+  <p class="deadline deadline--error" role="alert">{{ message }}</p>
+}
